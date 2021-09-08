@@ -23,6 +23,10 @@ body {
   overflow: hidden;
   background-color: rgba(0, 19, 70, 0.8);
 }
+.fundo-img-wrapper {
+  background-image: linear-gradient(to top, #fce3ff00, #7f00ff);
+  opacity: 1;
+}
 header {
   width: 100%;
   height: 100vh;
@@ -46,8 +50,8 @@ header {
 }
 .banner {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 25%;
+  left: 15%;
   animation: moveBanner 2s;
 }
 @keyframes moveBanner {
@@ -59,6 +63,22 @@ header {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.border-perfil {
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to bottom, #e100ff, #7f00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.banner img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
 }
 .banner h1 {
   color: white;
