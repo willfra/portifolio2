@@ -75,7 +75,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .banner img {
   width: 10rem;
@@ -123,15 +122,21 @@ header {
 .banner button:hover {
   color: rgb(226, 226, 226);
 }
-.hamburguer i {
-  position: fixed;
+.hamburguer-aberto, .hamburguer , .hamburguer i {
+  position: absolute;
   z-index: 9;
-  right: 2rem;
-  top: 2rem;
+  right: 1rem;
+  top: 1rem;
   font-size: 3rem;
   color: white;
   text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  transition: all 0.8s;
+  transition-delay: 0.01s;
+}
+.show-menu .hamburguer-aberto, .show-menu .hamburguer i {
+  right: 15rem;
+  color: #7f00ff !important;
 }
 .sidebar {
   width: 20rem;
@@ -142,7 +147,7 @@ header {
   right: -20rem;
   transition: all 0.6s;
 }
-.sidebar.show-menu {
+.show-menu .sidebar {
   right: 0;
 }
 .menu {
