@@ -58,6 +58,13 @@ header {
   left: 15%;
   animation: moveBanner 2s;
 }
+
+@media only screen and (max-width: 750px) {
+  .banner {
+    top: 10%;
+  }
+}
+
 @keyframes moveBanner {
   0% {
     transform: translateY(10rem);
