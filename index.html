@@ -17,7 +17,7 @@
 
 <body>
     <div class="container">
-        <div class="hamburguer"><i id="icon-hamburguer" class="fas fa-bars"></i></div>
+        <div class="hamburguer"><i id="icon-menu-barra" class="fas fa-bars"></i><i id="icon-menu-x" class="fas fa-times"></i></div>
         <header>
             <div class="img-wrapper">
                 <div class="fundo-img-wrapper">
@@ -27,7 +27,7 @@
 
             <div class="banner">
                 <div class="border-perfil">    
-                    <img src="/portifolio2/imagens/perfil.jpg" alt="">
+                    <img src="/imagens/perfil.jpg" alt="">
                 </div>
                 <h1>Web Developer & Front End Designer</h1>
                 <p>William França</p>
@@ -55,6 +55,12 @@
 
 </body>
 
-<script src="/script.js" type="text/javascript"></script>
+<script>
+    var hamburguer = document.querySelector(".hamburguer");
+
+hamburguer.addEventListener("click", function () {
+  document.querySelector(".container").classList.toggle("show-menu");
+});
+</script>
 
 </html>

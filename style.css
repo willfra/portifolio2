@@ -52,6 +52,8 @@ header {
 }
 .banner {
   position: absolute;
+  height: 100%;
+  width: 80%;
   top: 25%;
   left: 15%;
   animation: moveBanner 2s;
@@ -122,7 +124,7 @@ header {
 .banner button:hover {
   color: rgb(226, 226, 226);
 }
-.hamburguer-aberto, .hamburguer , .hamburguer i {
+.hamburguer i {
   position: absolute;
   z-index: 9;
   right: 1rem;
@@ -131,12 +133,24 @@ header {
   color: white;
   text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  transition: all 0.8s;
+  transition: all 0.5s;
   transition-delay: 0.01s;
 }
-.show-menu .hamburguer-aberto, .show-menu .hamburguer i {
+.show-menu .hamburguer i {
   right: 15rem;
   color: #7f00ff !important;
+}
+#icon-menu-barra {
+  opacity: 1;
+}
+#icon-menu-x {
+  opacity: 0;
+}
+.show-menu #icon-menu-x {
+  opacity: 1;
+}
+.show-menu #icon-menu-barra {
+  opacity: 0;
 }
 .sidebar {
   width: 20rem;
