@@ -145,13 +145,16 @@ header {
 }
 .show-menu .hamburguer i {
   right: 15rem;
-  color: #7f00ff !important;
+  color: #7f00ff;
 }
 #icon-menu-barra {
   opacity: 1;
 }
 #icon-menu-x {
   opacity: 0;
+}
+#icon-menu-x:hover {
+  color: #e100ff;
 }
 .show-menu #icon-menu-x {
   opacity: 1;
