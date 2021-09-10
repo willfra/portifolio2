@@ -61,7 +61,6 @@ header {
 
 @media only screen and (max-width: 750px) {
   .banner {
-    top: 10%;
     left: 10%;
   }
 }
@@ -320,4 +319,21 @@ header {
 .conhecimento-img-wrapper img {
   object-fit: cover;
   height: 100%;
+}
+@media only screen and (max-width: 1100px) {
+  .conhecimento-img-wrapper {
+    display: none;
+  }
+  .conhecimentos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 10%;
+    width: 80%;
+  }
+  .conhecimento {
+    margin-top: 1.5rem;
+  }
 }
