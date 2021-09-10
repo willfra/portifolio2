@@ -61,6 +61,7 @@ header {
 
 @media only screen and (max-width: 750px) {
   .banner {
+    top: 8%;
     left: 10%;
   }
 }
